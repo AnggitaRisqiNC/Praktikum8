@@ -10,8 +10,8 @@ Kelas : TI.22.A.4
 |-----|------|-----|
 |1|Tugas Praktikum 8|[Click Here](#tugas-praktikum-8)|
 |2|Praktikum 8|[Click Here](#praktikum-8)|
-|3|Flowchart Praktikum 8|[Click Here](#flowchart-praktikum-8)|
-|4|Diagram Class Praktikum 8|[Click Here](#diagram-class-praktikum-8)
+|3|Diagram Class Praktikum 8|[Click Here](#diagram-class-praktikum-8)
+|4|Flowchart Praktikum 8|[Click Here](#flowchart-praktikum-8)|
 
 ## Tugas Praktikum 8
 Buat program sederhana dengan mengaplikasikan penggunaan class. Buatlah class untuk menampilkan daftar nilai mahasiswa, dengan ketentuan:
@@ -38,7 +38,7 @@ Buat program sederhana dengan mengaplikasikan penggunaan class. Buatlah class un
 ![image](https://github.com/AnggitaRisqiNC/Praktikum8/blob/main/Gambar/10.png)
 
 ### Penjelasan
-Pertama kita harus mendeklarasikan bahwa variabel data sebagai penyimpanan (dictionary) sebuah data inputan.
+Pertama kita harus mendeklarasikan bahwa variabel data sebagai penyimpanan (dictionary) sebuah data inputan :
 ```python
 data = {}
 ```
@@ -48,10 +48,11 @@ Selanjutnya adalah membuat Class :
 class Data():
 ```
 
-**def _init_(self)** merupakan constructor (Method atau fungsi yang akan dieksekusi ketika instance class dibuat).
+Selanjutnya membuat constructor :
 ```python
 def __init__(self, nama, nim, tugas, uts, uas, nilaiakhir):
 ```
+(Method atau fungsi yang akan dieksekusi ketika instance class dibuat).
 
 Kemudian menambahkan definisi fungsi :
 
@@ -82,7 +83,7 @@ while True:
 
 1. Menambahkan Data
 
-    Perintah dijalankan jika input yang dimasukan adalah '2', Kondisi berikut digunakan untuk melakukan input data seperti Nama, NIM, Nilai Tugas, UTS dan UAS :
+    Perintah dijalankan jika input yang dimasukan adalah `'2'`, Kondisi berikut digunakan untuk melakukan input data seperti Nama, NIM, Nilai Tugas, UTS dan UAS :
     ```python
     def tambah(self):
             print()
@@ -106,7 +107,7 @@ class mahasiswa(Data):
 
 2. Menampilkan Data
 
-    Perintah dijalankan jika input yang dimasukan adalah '1', Jika sebelumnya data sudah ditambahkan atau data tersedia, maka data tersebut akan ditampilkan sebanyak data yang ditambahkan. Jika data tersebut belum ditambahkan atau tidak tersedia, maka akan menampilkan bahwa tidak ada data : 
+    Perintah dijalankan jika input yang dimasukan adalah `'1'`, Jika sebelumnya data sudah ditambahkan atau data tersedia, maka data tersebut akan ditampilkan sebanyak data yang ditambahkan. Jika data tersebut belum ditambahkan atau tidak tersedia, maka akan menampilkan bahwa tidak ada data : 
     ```python
     def tampilkan(self):
             if data.items():
@@ -137,7 +138,7 @@ class mahasiswa(Data):
 
 3. Mengubah Data
 
-    Perintah dijalankan jika input yang dimasukan adalah '3', di dalam kondisi ini terdapat input dan kondisi, dimana jika ada di dalam variabel (data.keys) :
+    Perintah dijalankan jika input yang dimasukan adalah `'3'`, di dalam kondisi ini terdapat input dan kondisi, dimana jika ada di dalam variabel (data.keys) :
     ```python
     def ubah(self):
             print()
@@ -159,7 +160,7 @@ class mahasiswa(Data):
 
 4. Menghapus Data
 
-    Perintah dijalankan jika input yang digunakan adalah '4', sama seperti mengubah data, untuk menghapus data yang dipilih menggunakan variabel (data.keys):
+    Perintah dijalankan jika input yang digunakan adalah `'4'`, sama seperti mengubah data, untuk menghapus data yang dipilih menggunakan variabel (data.keys):
     ```python
     def hapus(self):
             print()
